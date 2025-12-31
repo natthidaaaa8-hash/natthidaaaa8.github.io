@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday - Naming</title>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <div class="floating-background" id="floatingBg">
+    </div>
+    <section class="header-section">
+        <h1 class="main-title">Happy</h1>
+        <h1 class="main-title1">Birthday</h1>
+        <h2 class="name-display">Beer 🎉</h2>
+        <div class="image-stack">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video src="image/n2.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                    <div class="swiper-slide"><img src="image/n3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="image/n4.jpg" alt=""></div>
+                    <div class="swiper-slide">
+                        <video src="image/n5.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="image/n6.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                    <div class="swiper-slide"><img src="image/n7.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="image/n8.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="image/n9.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="image/n10.jpg" alt=""></div>
+                </div>
+            </div>
+    </section>
+    <!-- เพลง -->
+    <section class="music-section">
+        <div class="music-card">
+            <div class="music-info-flex">
+                <div class="album-art">
+                    <img src="image/Y.webp" alt="Album Cover" id="albumImg">
+                </div>
+                <div class="song-details">
+                    <p class="song-title">YEW - ตาข่ายดักฝัน | Rainbow Catcher</p>
+                    <p class="artist">No One Else</p>
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div class="time-display">
+                    <span id="currentTime">00:00</span>
+                    <span id="duration">04:38</span>
+                </div>
+                <input type="range" id="progressBar" value="0" min="0" max="100">
+            </div>
+
+            <div class="controls">
+                <button class="control-btn" id="prevBtn">⏪</button>
+                <button class="control-btn play-pause" id="playBtn">▶️</button>
+                <button class="control-btn" id="nextBtn">⏩</button>
+            </div>
+        </div>
+        <audio id="bgMusic" src="YEW - ตาข่ายดักฝัน _ Rainbow Catcher [Official Video].mp4"></audio>
+    </section>
+    <section class="message-section">
+        <div class="text-box">
+            <p>วันนี้วันที่ 29/12/68 เค้าเตรียมการก่อนตั้ง 4 วัน
+                ดูดิ๊เค้ารักเทอแค่ไหนเค้าเขียนเว็บนี้ขึ้นมาเพราะเค้าอยากให้เทอจดจำถ้าให้ของกินอย่างเดียวมันไม่คุ้มเดี๋ยวเทอก็ขี้เทออาจจะลืมก็ได้
+                หยอกจริงๆเค้าอยากทำให้เทอประทับใจกับสิ่งที่เค้าพยายามทำให้เทออย่างสุดความสามารถ</p>
+            <p>วันเกิดเทอปีนี้เค้าตื่นเต้นมากเพราะเค้าอยากทำให้เทอแฮปปี้กับวันนี้มากที่สุดเพราะเทอดูไม่อินกับวันเกิดของเทอเลยยยเพราะงั้นต้องกระตุ้นหน่อยย
+            </p>
+            <p>เค้าหวังว่าเทอจะชอบนะกับเว็บนี้ที่เค้าทำให้เทอ
+                เว็บนี้มันอาจจะดูไม่มีอะไรพิเศษมากแต่เค้าตั้งใจทำให้เทอน้าาาคนดีย์ของเค้าา</p>
+        </div>
+    </section>
+    <section class="memories-zone">
+        <h3>Memories<br>Zone 📸</h3>
+        <h1>ใส่ชื่อวันเกิดของที่รัก (พ.ศ)</h1>
+        <div class="otp-inputs">
+            <input type="text" maxlength="1" class="otp">
+            <input type="text" maxlength="1" class="otp">
+            <input type="text" maxlength="1" class="otp">
+            <input type="text" maxlength="1" class="otp">
+            <input type="text" maxlength="1" class="otp">
+            <input type="text" maxlength="1" class="otp">
+        </div>
+
+
+
+        <div id="hiddenContent" class="hidden">
+            <div class="gift-container">
+                <div class="gift-box-wrapper" id="giftBox">
+                    <div class="gift-lid"></div>
+                    <div class="gift-body">
+                        <div class="heart-icon">❤️</div>
+                    </div>
+                </div>
+                <p class="click-text">ลองกดที่กล่องของขวัญสิ้ที่รัก</p>
+            </div>
+
+            <div id="messagePopup" class="message-popup hidden">
+                <div class="message-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Happy Birthday <br>หวานใจ💖</h2>
+                    <p>ปีนี้อายุ 22 ขวบแล้ว <br>ขอให้เทอสุขภาพแข็งแรงไม่เจ็บไม่ปวดไม่ขี้มูกไหลโชว์เค้า <br>
+                        ขอให้เทอคิดสิ่งใดสมปรารถนาที่เทอต้องการราบรื่นตลอดเลย
+                        <br>ขอให้โชคดีตลอดทั้งปีไม่มีเรื่องที่ทำให้เทอต้องเสียใจ
+                        <br>มีความสุขยิ้มเยอะๆน้าาคนยิ้มหวานสดใสแบบนี้ไปตลอดนะ <br>สุดท้ายท้ายสุดเค้าจะอยู่ข้าง <br>เทอเสมอ
+                        รักนะจ้ะจุ๊บๆ
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="imgFull">
+         <video id="videoFull" class="modal-content hidden" controls autoplay></video>
+    </div>
+
+
+    <script src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true,
+        });
+    </script>
+
+</body>
+</html>
